@@ -1,0 +1,152 @@
+:root {
+    color-scheme: light;
+    font-family: "DM Sans", sans-serif;
+    color: #20342f;
+    background: #f2f5f2;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.8rem 1rem;
+    background: #173f35;
+    color: #fff;
+}
+
+.site-title {
+    color: inherit;
+    font-family: "Lora", serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    aspect-ratio: 1;
+    border: 1px solid #ffffff70;
+    border-radius: 4px;
+    background: transparent;
+    color: inherit;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus-visible {
+    background: #ffffff20;
+}
+
+.nav-links {
+    display: none;
+    grid-column: 1 / -1;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.nav-links.is-open {
+    display: flex;
+}
+
+.nav-links a {
+    padding: 0.7rem 0.8rem;
+    border-radius: 4px;
+    color: inherit;
+    text-decoration: none;
+    transition: background-color 150ms ease, color 150ms ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    background: #dce9df;
+    color: #173f35;
+}
+
+main {
+    width: min(100% - 2rem, 1100px);
+    margin-inline: auto;
+    padding-block: 1.5rem 2rem;
+    flex: 1;
+}
+
+h1 {
+    margin: 0 0 1.25rem;
+    color: #173f35;
+    font-family: "Lora", serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid #cbd6d0;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 2px 8px #18352b12;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background: #dce9df;
+}
+
+figcaption {
+    padding: 0.75rem;
+    color: #173f35;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+footer {
+    padding: 1rem;
+    background: #173f35;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.25rem;
+}
+
+.footer-flower {
+    color: #b9d88b;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}

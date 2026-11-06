@@ -1,0 +1,28 @@
+@media (min-width: 700px) {
+    .site-header {
+        grid-template-columns: auto 1fr;
+        padding-inline: max(2rem, calc((100vw - 1100px) / 2));
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links,
+    .nav-links.is-open {
+        display: flex;
+        grid-column: auto;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 0.25rem;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.25rem;
+    }
+
+    figure img {
+        height: 190px;
+    }
+}

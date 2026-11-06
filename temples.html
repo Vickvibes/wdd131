@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive album of temples around the world.">
+    <meta name="author" content="Ojutiku Victor">
+    <title>Temple Album | Ojutiku Victor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="site-title" href="temples.html">Temple Album</a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+            <span class="menu-icon" aria-hidden="true">&#9776;</span>
+        </button>
+        <nav class="nav-links" id="primary-navigation" aria-label="Main navigation">
+            <a href="#gallery">Home</a>
+            <a href="#gallery">Old</a>
+            <a href="#gallery">New</a>
+            <a href="#gallery">Large</a>
+            <a href="#gallery">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <section class="temple-grid" id="gallery" aria-label="Temple photo album">
+            <figure>
+                <img src="images/aba_nigeria_temple_lds.webp" alt="Aba Nigeria Temple" loading="lazy">
+                <figcaption>Aba Nigeria Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/accra_ghana_temple_lds.jpeg" alt="Accra Ghana Temple" loading="lazy">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/atlanta_georgia_temple_sunset.jpeg" alt="Atlanta Georgia Temple at sunset" loading="lazy">
+                <figcaption>Atlanta Georgia Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bern_switzerland_temple_lds.jpeg" alt="Bern Switzerland Temple" loading="lazy">
+                <figcaption>Bern Switzerland Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/billings_temple_lds.jpeg" alt="Billings Montana Temple" loading="lazy">
+                <figcaption>Billings Montana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/los_angeles_california_temple.jpeg" alt="Los Angeles California Temple" loading="lazy">
+                <figcaption>Los Angeles California Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/manti_temple.jpeg" alt="Manti Utah Temple" loading="lazy">
+                <figcaption>Manti Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/orlando_florida_mormon_temple.jpeg" alt="Orlando Florida Temple" loading="lazy">
+                <figcaption>Orlando Florida Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/paris_france_temple.jpeg" alt="Paris France Temple" loading="lazy">
+                <figcaption>Paris France Temple</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Ojutiku Victor <span class="footer-flower" aria-hidden="true">&#10047;</span> Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
