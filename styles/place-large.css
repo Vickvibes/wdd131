@@ -38,9 +38,9 @@
         max-width: min(22rem, 34vw);
         margin: 2rem 1rem;
         padding: 0 0 1rem;
-        background: rgb(255 255 255 / 88%);
+        background: var(--panel-background);
         text-align: left;
-        box-shadow: 0 8px 26px rgb(22 27 24 / 18%);
+        box-shadow: 0 8px 26px var(--panel-shadow);
         backdrop-filter: blur(5px);
     }
 

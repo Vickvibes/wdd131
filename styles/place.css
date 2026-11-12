@@ -1,9 +1,12 @@
 :root {
-    color-scheme: light;
     --madagascar-red: #d20a32;
     --madagascar-green: #087c50;
     --ink: #171a18;
-    --paper: #fff;
+    --paper: #ffffff;
+    --divider: #e8e8e8;
+    --flower-accent: #ffd44f;
+    --panel-background: #ffffffe0;
+    --panel-shadow: #161b182e;
     font-family: "DM Sans", sans-serif;
     color: var(--ink);
     background: var(--paper);
@@ -67,7 +70,7 @@ body {
 }
 
 .data-panel {
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid var(--divider);
 }
 
 .info-panel h2 {
@@ -128,7 +131,7 @@ body {
 }
 
 .footer-flower {
-    color: #ffd44f;
+    color: var(--flower-accent);
 }
 
 @media (max-width: 380px) {
