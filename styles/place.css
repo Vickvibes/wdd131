@@ -114,10 +114,6 @@ body {
     object-fit: contain;
 }
 
-.weather-panel h2::after {
-    content: none;
-}
-
 .site-footer {
     padding: 1.5rem 1rem;
     background: var(--madagascar-red);
