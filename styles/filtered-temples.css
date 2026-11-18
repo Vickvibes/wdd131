@@ -192,10 +192,8 @@ footer p {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        scroll-behavior: auto !important;
-        transition-duration: 0.01ms !important;
+    .nav-links a,
+    .menu-toggle {
+        transition-duration: 0.01ms;
     }
 }
