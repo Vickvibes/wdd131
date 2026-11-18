@@ -1,14 +1,14 @@
 :root {
-    --forest: #173f35;
-    --ink: #20342f;
-    --paper: #ffffff;
-    --page: #f2f5f2;
-    --line: #cbd6d0;
-    --soft-green: #dce9df;
-    --flower: #b9d88b;
+    --primary: #173f35;
+    --text: #20342f;
+    --surface: #ffffff;
+    --canvas: #f2f5f2;
+    --outline: #cbd6d0;
+    --surface-accent: #dce9df;
+    --accent: #b9d88b;
     font-family: "DM Sans", sans-serif;
-    color: var(--ink);
-    background: var(--page);
+    color: var(--text);
+    background: var(--canvas);
     font-synthesis: none;
     text-rendering: optimizeLegibility;
 }
@@ -30,12 +30,12 @@ body {
     align-items: center;
     gap: 0.75rem;
     padding: 0.8rem 1rem;
-    background: var(--forest);
-    color: var(--paper);
+    background: var(--primary);
+    color: var(--surface);
 }
 
 .site-title {
-    color: var(--paper);
+    color: var(--surface);
     font-family: "Lora", serif;
     font-size: 1.3rem;
     font-weight: 700;
@@ -50,7 +50,7 @@ body {
     border: 1px solid #ffffff70;
     border-radius: 4px;
     background: #00000000;
-    color: var(--paper);
+    color: var(--surface);
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -74,7 +74,7 @@ body {
 .nav-links a {
     padding: 0.7rem 0.8rem;
     border-radius: 4px;
-    color: var(--paper);
+    color: var(--surface);
     text-decoration: none;
     transition: background-color 150ms ease, color 150ms ease;
 }
@@ -82,8 +82,8 @@ body {
 .nav-links a:hover,
 .nav-links a:focus-visible,
 .nav-links a[aria-current="page"] {
-    background: var(--soft-green);
-    color: var(--forest);
+    background: var(--surface-accent);
+    color: var(--primary);
 }
 
 main {
@@ -95,7 +95,7 @@ main {
 
 h1 {
     margin: 0 0 0.25rem;
-    color: var(--forest);
+    color: var(--primary);
     font-family: "Lora", serif;
     font-size: 2rem;
     text-align: center;
@@ -119,16 +119,16 @@ h1 {
     min-width: 0;
     margin: 0;
     overflow: hidden;
-    border: 1px solid var(--line);
+    border: 1px solid var(--outline);
     border-radius: 5px;
-    background: var(--paper);
+    background: var(--surface);
     box-shadow: 0 2px 8px #18352b12;
 }
 
 .temple-card h2 {
     margin: 0;
     padding: 0.9rem 0.8rem 0.45rem;
-    color: var(--forest);
+    color: var(--primary);
     font-size: 1.15rem;
     text-align: center;
 }
@@ -151,7 +151,7 @@ h1 {
 }
 
 .temple-details dt {
-    color: var(--forest);
+    color: var(--primary);
     font-variant: small-caps;
     font-weight: 700;
 }
@@ -166,7 +166,7 @@ h1 {
     height: 190px;
     margin: 0 auto 0.8rem;
     border-radius: 3px;
-    background: var(--soft-green);
+    background: var(--surface-accent);
     object-fit: cover;
 }
 
@@ -176,8 +176,8 @@ h1 {
 
 footer {
     padding: 1rem;
-    background: var(--forest);
-    color: var(--paper);
+    background: var(--primary);
+    color: var(--surface);
     text-align: center;
     font-size: 0.9rem;
 }
@@ -187,7 +187,7 @@ footer p {
 }
 
 .footer-flower {
-    color: var(--flower);
+    color: var(--accent);
 }
 
 @media (prefers-reduced-motion: reduce) {
