@@ -165,6 +165,25 @@ footer {
     text-align: center;
 }
 
+.validation-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.validation-badges a,
+.validation-badges img {
+    display: block;
+}
+
+.validation-badges img {
+    width: 88px;
+    height: 31px;
+}
+
 @media (min-width: 700px) {
     main {
         padding-top: 2.25rem;
