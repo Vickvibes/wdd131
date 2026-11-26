@@ -1,0 +1,188 @@
+:root {
+    --primary: #4a1f45;
+    --primary-dark: #32142f;
+    --accent: #f2edf1;
+    --surface: #ffffff;
+    --text: #1f1f23;
+    --border: #d9d2d7;
+    --required: #8f2d4f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: #eceaed;
+    color: var(--text);
+    font-family: "DM Sans", sans-serif;
+}
+
+header {
+    padding: 1.1rem 1rem;
+    background: var(--primary-dark);
+    color: var(--surface);
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Lora", serif;
+    font-size: 1.65rem;
+}
+
+main {
+    width: min(calc(100% - 1.5rem), 520px);
+    margin: 1rem auto;
+}
+
+form,
+.confirmation section {
+    border: 1px solid var(--border);
+    background: var(--accent);
+}
+
+form {
+    display: grid;
+    gap: 0.55rem;
+    padding: 1rem;
+}
+
+label,
+legend {
+    font-weight: 700;
+}
+
+.required,
+legend .required {
+    color: var(--required);
+}
+
+.optional,
+.instruction {
+    font-size: 0.82rem;
+    font-weight: 400;
+}
+
+.instruction {
+    margin: 0.15rem 0 0.45rem;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    min-height: 2.6rem;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    background: var(--surface);
+    color: var(--text);
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    margin: 0.35rem 0;
+    padding: 0;
+    border: 0;
+}
+
+.rating-options {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 0.25rem;
+}
+
+.rating-options label {
+    display: grid;
+    justify-items: center;
+    gap: 0.2rem;
+    min-width: 0;
+    font-weight: 400;
+}
+
+.rating-options label span {
+    min-height: 1.25rem;
+    font-size: clamp(0.65rem, 3vw, 1rem);
+    white-space: nowrap;
+}
+
+.feature-options {
+    display: grid;
+    gap: 0.55rem;
+}
+
+.feature-options label {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-weight: 400;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: var(--primary);
+}
+
+input[type="submit"] {
+    min-height: 2.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #1f1f23;
+    background: var(--surface);
+    color: var(--text);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus-visible {
+    background: var(--primary);
+    color: var(--surface);
+}
+
+.confirmation section {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.confirmation h2 {
+    margin-top: 0;
+    color: var(--primary);
+}
+
+.review-link {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: var(--primary);
+    color: var(--surface);
+    text-decoration: none;
+}
+
+footer {
+    padding: 1rem;
+    background: var(--primary-dark);
+    color: var(--surface);
+    text-align: center;
+}
+
+footer p {
+    margin: 0.15rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms;
+        animation-duration: 0.01ms;
+    }
+}

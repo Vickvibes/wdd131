@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit a product review with a rating, installation date, useful features, and written feedback.">
+    <meta name="author" content="Ojutiku Victor">
+    <title>Product Review</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <label for="product-name">Product Name <span class="required">*</span></label>
+            <select id="product-name" name="product-name" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <fieldset>
+                <legend>Overall Rating <span class="required">*</span></legend>
+                <div class="rating-options">
+                    <label for="rating-1"><span>☆</span><input type="radio" id="rating-1" name="rating" value="1" required></label>
+                    <label for="rating-2"><span>☆☆</span><input type="radio" id="rating-2" name="rating" value="2" required></label>
+                    <label for="rating-3"><span>☆☆☆</span><input type="radio" id="rating-3" name="rating" value="3" required></label>
+                    <label for="rating-4"><span>☆☆☆☆</span><input type="radio" id="rating-4" name="rating" value="4" required></label>
+                    <label for="rating-5"><span>☆☆☆☆☆</span><input type="radio" id="rating-5" name="rating" value="5" required></label>
+                </div>
+            </fieldset>
+
+            <label for="installation-date">Date of Installation <span class="required">*</span></label>
+            <input type="date" id="installation-date" name="installation-date" required>
+
+            <fieldset>
+                <legend>Which features did you find useful in the product?</legend>
+                <p class="instruction">(Check all that apply)</p>
+                <div class="feature-options">
+                    <label for="durability"><input type="checkbox" id="durability" name="durability" value="Durability">Durability</label>
+                    <label for="ease-of-use"><input type="checkbox" id="ease-of-use" name="ease-of-use" value="Ease of Use">Ease of Use</label>
+                    <label for="performance"><input type="checkbox" id="performance" name="performance" value="Performance">Performance</label>
+                    <label for="design"><input type="checkbox" id="design" name="design" value="Design">Design</label>
+                </div>
+            </fieldset>
+
+            <label for="written-review">Written Review <span class="optional">(Optional)</span></label>
+            <textarea id="written-review" name="written-review" rows="5"></textarea>
+
+            <label for="user-name">Your Name <span class="optional">(Optional)</span></label>
+            <input type="text" id="user-name" name="user-name">
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Ojutiku Victor Oluwaseun <span aria-hidden="true">🌸</span> Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
